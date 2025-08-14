@@ -24,7 +24,7 @@ class Stack:
 
     def reverse(self) -> list[Any]:
         """
-        并不会创建一个新的Stack，只是把原来的Stack给反转
+        创建一个新的Stack，只是把原来的Stack不会变
         """
         return self.stack[::-1]
 

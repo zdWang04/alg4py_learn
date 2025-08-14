@@ -12,7 +12,7 @@ def dec2bi(decNum: int) -> str:
         rem_stack.push(rem)
         decNum = decNum // 2
 
-    bi_str = ""
+    bi_str: str = ""
     while not rem_stack.isEmpty():
         bi_str += str(rem_stack.pop())
     return bi_str
