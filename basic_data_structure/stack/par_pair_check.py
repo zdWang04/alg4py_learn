@@ -44,7 +44,7 @@ def parCherker(symbolstring: str) -> bool:
         return False
 
 
-# def test4parCherker():
+# def test():
 #     assert parCherker("(((((((((())))))))))")
 #     assert not parCherker("")
 #     assert not parCherker("((())))")
@@ -53,8 +53,7 @@ def parCherker(symbolstring: str) -> bool:
 #     assert not parCherker("[][][][[]]]")
 #     assert not parCherker("\\{\\{{\\{{\\}}}}")
 
-#     print("All test passed!")
-
 
 # if __name__ == "__main__":
-#     test4parCherker()
+#     test()
+#     print("All test passed!")
