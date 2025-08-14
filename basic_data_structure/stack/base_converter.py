@@ -20,10 +20,11 @@ def dec2bi(decNum: int) -> str:
 
 def dec2any(decNum: int, base: int) -> str:
     num_str = "0123456789ABCDEF"
-    assert (base <= 16) and (base > 0), "最多支持16进制的转化"
+    assert (base <= 16) and (base > 0), "只支持10进制向1~16进制的转化"
     if decNum == 0:
         return "0"
-
+    if base == 1:
+	return '1'*decNum # 对1进制的实现
     rem_stack = Stack()
     while decNum > 0:
         rem = decNum % base
