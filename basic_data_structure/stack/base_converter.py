@@ -24,7 +24,7 @@ def dec2any(decNum: int, base: int) -> str:
     if decNum == 0:
         return "0"
     if base == 1:
-	return '1'*decNum # 对1进制的实现
+        return "1" * decNum  # 对1进制的实现
     rem_stack = Stack()
     while decNum > 0:
         rem = decNum % base
